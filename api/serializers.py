@@ -6,4 +6,5 @@ from api.models import Blog
 class BlogSerializer(serializers.ModelSerializer):
     class Meta:
         model = Blog
-        exclude = ('owner',)        
+        fields = '__all__'
+      
